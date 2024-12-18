@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/CW_NM.dir/src/euler.cpp.o CMakeFiles/CW_NM.dir/src/main.cpp.o CMakeFiles/CW_NM.dir/src/parameters.cpp.o CMakeFiles/CW_NM.dir/src/runge_kutta4.cpp.o -o CW_NM
+/usr/bin/c++ -g CMakeFiles/CW_NM.dir/src/euler.cpp.o CMakeFiles/CW_NM.dir/src/main.cpp.o CMakeFiles/CW_NM.dir/src/parameters.cpp.o -o CW_NM

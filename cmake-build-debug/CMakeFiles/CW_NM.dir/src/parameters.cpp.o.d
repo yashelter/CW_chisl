@@ -1,7 +1,7 @@
 CMakeFiles/CW_NM.dir/src/parameters.cpp.o: \
- /home/yashelter/Documents/CW_Numerical_Methods/src/parameters.cpp \
+ /home/yashelter/Documents/CW_chisl/src/parameters.cpp \
  /usr/include/stdc-predef.h \
- /home/yashelter/Documents/CW_Numerical_Methods/./include/parameters.h \
+ /home/yashelter/Documents/CW_chisl/./include/parameters.h \
  /usr/include/c++/14.2.1/string \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \

@@ -1,7 +1,7 @@
 CMakeFiles/CW_NM.dir/src/main.cpp.o: \
- /home/yashelter/Documents/CW_Numerical_Methods/src/main.cpp \
+ /home/yashelter/Documents/CW_chisl/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/yashelter/Documents/CW_Numerical_Methods/./include/euler.h \
+ /home/yashelter/Documents/CW_chisl/./include/euler.h \
  /usr/include/c++/14.2.1/vector \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -190,7 +190,7 @@ CMakeFiles/CW_NM.dir/src/main.cpp.o: \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/14.2.1/bits/fstream.tcc \
- /home/yashelter/Documents/CW_Numerical_Methods/./include/parameters.h \
+ /home/yashelter/Documents/CW_chisl/./include/parameters.h \
  /usr/include/c++/14.2.1/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -211,4 +211,4 @@ CMakeFiles/CW_NM.dir/src/main.cpp.o: \
  /usr/include/c++/14.2.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/14.2.1/tr1/riemann_zeta.tcc \
  /usr/include/c++/14.2.1/iostream \
- /home/yashelter/Documents/CW_Numerical_Methods/./include/parameters.h
+ /home/yashelter/Documents/CW_chisl/./include/parameters.h

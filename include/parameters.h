@@ -5,49 +5,44 @@
 #include <fstream>
 #include <cmath>
 
-class Globals
-{
-public:
-	const double P = 101325; // давление 1 атмосферы
-	const double M_air = 0.029; // молярная масса сухого воздуха
-	const double R =  8.31446261815324; // газовая постоянная
-
-	double get_air_density(double K);
-
-};
 struct Parameters
 {
 
-	const double u_f;      // Скорость потока
-	const double u_0;      // Начальная скорость частицы
-	const double t_0 = 0.0;  // Начальное время
-	const double r_is;     // Радиус частицы
-	const double r_n;     // Радиус сопла
-	const double q;        // Плотность частицы
-	const double q_g;        // Плотность газа
-	const double R;        // Газовая постоянная
-	const double gamma;    // Отношение молярных теплоемкостей
-	const double M;        // Молярная масса воздуха
-	const double T;        // Температура газа
-	const double T_0;      // Контрольная температура газа
-	const double eta_0;    // Контрольная вязкость газа
-	const double Cp; // Удельная теплоемкость вещества
+	const double P = 101325;
+	const double R =  8.31446261815324;
 
-	const double a = calculate_sound_speed(R, gamma, M, T); // Скорость звука
-	const double viscosity = calculate_viscosity(eta_0, T_0, T);    // Вязкость
+	const double u_f;					 // Скорость потока
+	const double u_0;					 // Начальная скорость частицы
+	const double t_0 = 0.0;				 // Начальное время
+	const double r_is;					 // Радиус частицы
+	const double r_n;					 // Радиус сопла
+	const double q = 3990;				 // Плотность частицы
+	double q_g;							 // Плотность газа
+	const double M_air = 1.4;		     // Отношение молярных теплоемкостей
+	const double M = 0.029;		  	     // Молярная масса воздуха
+	const double T;						 // Температура газа
+	const double T_0 = 291.15;			 // Контрольная температура газа
+	const double eta_0 = 1.827e-5;		 // Контрольная вязкость газа
+	const double Cp = 920;				 // Удельная теплоемкость вещества
+
+	double a; // Скорость звука
+	double viscosity;    // Вязкость
 
 	static Parameters load_from_file(const std::string& filename);
 
-	Parameters(double u_f, double u_0, double r_is, double r_n,
-			   double q, double q_g, double R, double gamma, double M, double T, double T_0, double eta_0, double Cp)
-
-			: u_f(u_f), u_0(u_0), r_is(r_is), r_n(r_n),
-			  q(q), q_g(q_g), R(R), gamma(gamma), M(M),
-			  T(T), T_0(T_0), eta_0(eta_0), Cp(Cp),
-			  a(calculate_sound_speed(R, gamma, M, T)),
-			  viscosity(calculate_viscosity(eta_0, T_0, T)) {}
+	Parameters(double u_f, double u_0, double r_is, double r_n, double T)
+			: u_f(u_f), u_0(u_0), r_is(r_is), r_n(r_n), T(T)
+	{
+		q_g = calculate_gas_desity();
+		a = (calculate_sound_speed(R, M_air, M, T));
+		viscosity = (calculate_viscosity(eta_0, T_0, T));
+	}
 
 private:
+	double calculate_gas_desity()
+	{
+		return P * M / (R * T);
+	}
 
 	static double calculate_sound_speed(double R, double gamma, double M, double T)
 	{

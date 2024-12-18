@@ -1,5 +1,5 @@
 CMakeFiles/CW_NM.dir/src/euler.cpp.o: \
- /home/yashelter/Documents/CW_Numerical_Methods/src/euler.cpp \
+ /home/yashelter/Documents/CW_chisl/src/euler.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14.2.1/iostream \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -167,7 +167,7 @@ CMakeFiles/CW_NM.dir/src/euler.cpp.o: \
  /usr/include/c++/14.2.1/bits/unicode-data.h \
  /usr/include/c++/14.2.1/bits/ostream.tcc /usr/include/c++/14.2.1/istream \
  /usr/include/c++/14.2.1/bits/istream.tcc \
- /home/yashelter/Documents/CW_Numerical_Methods/./include/euler.h \
+ /home/yashelter/Documents/CW_chisl/./include/euler.h \
  /usr/include/c++/14.2.1/vector \
  /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/14.2.1/bits/stl_vector.h \
@@ -190,7 +190,7 @@ CMakeFiles/CW_NM.dir/src/euler.cpp.o: \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/14.2.1/bits/fstream.tcc \
- /home/yashelter/Documents/CW_Numerical_Methods/./include/parameters.h \
+ /home/yashelter/Documents/CW_chisl/./include/parameters.h \
  /usr/include/c++/14.2.1/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -210,4 +210,4 @@ CMakeFiles/CW_NM.dir/src/euler.cpp.o: \
  /usr/include/c++/14.2.1/tr1/poly_hermite.tcc \
  /usr/include/c++/14.2.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/14.2.1/tr1/riemann_zeta.tcc \
- /home/yashelter/Documents/CW_Numerical_Methods/./include/parameters.h
+ /home/yashelter/Documents/CW_chisl/./include/parameters.h

@@ -1,15 +1,9 @@
 #include "parameters.h"
 
 
-double Globals::get_air_density(double K)
-{
-	return P * M_air / (R * K);
-}
-
-
 Parameters Parameters::load_from_file(const std::string& filename)
 {
-	double u_f, u_0, r_is, r_n, q, q_g, R, gamma, M, T, T_0, eta_0, Cp;
+	double u_f, u_0, r_is, r_n, T;
 
 	std::ifstream input_file(filename);
 	if (!input_file.is_open())
@@ -17,10 +11,10 @@ Parameters Parameters::load_from_file(const std::string& filename)
 		throw std::runtime_error("Failed to open file: " + filename);
 	}
 
-	input_file >> u_f >> u_0 >> r_is >> r_n >> q >> q_g >> R >> gamma >> M >> T >> T_0 >> eta_0 >> Cp;
+	input_file >> u_f >> u_0 >> r_is >> r_n >> T;
 	input_file.close();
 
-	return { u_f, u_0, r_is, r_n, q, q_g, R, gamma, M, T, T_0, eta_0, Cp };
+	return { u_f, u_0, r_is, r_n, T};
 }
 
 
@@ -28,7 +22,7 @@ double altha_u(const Parameters& params, const double& u)
 {
 	double mach = calculate_Mach_number(params.u_f, u, params.a);
 	double reynolds = calculate_Reynolds_number(params.q_g, params.r_is, u, params.u_f, params.viscosity);
-	double S = calculate_S(mach, params.gamma);
+	double S = calculate_S(mach, params.M_air);
 	double C_i = calculate_C_i(mach, reynolds, S, params.u_f, params.a, params);
 	double St = calculate_stocks(params.q, params.r_is, params.a, params.viscosity, params.r_n);
 	return C_i / St;

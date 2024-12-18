@@ -5,16 +5,11 @@
 
 int main()
 {
-	Globals globals;
-	std::cout << globals.get_air_density(500) << std::endl;
 	try
 	{
-		Parameters params = Parameters::load_from_file("/home/yashelter/Documents/CW_Numerical_Methods/src/resources/input.txt");
-
-		double eps = 0.0001, h = 0.001;
-
+		Parameters params = Parameters::load_from_file("/home/yashelter/Documents/CW_chisl/src/resources/input.txt");
 		auto result = Euler::calculate_by_euler(params, params.u_0, params.t_0);
-		std::ofstream outFile("result.txt");
+		std::ofstream outFile("/home/yashelter/Documents/CW_chisl/src/result/data.txt");
 
 		Euler::print_results(outFile, result, params);
 

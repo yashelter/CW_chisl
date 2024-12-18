@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yashelter/Documents/CW_Numerical_Methods/cmake-build-debug"
+			"value" : "/home/yashelter/Documents/CW_chisl/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "30"
+			"value" : "29"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/var/lib/snapd/snap/clion/308/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/var/lib/snapd/snap/clion/296/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/var/lib/snapd/snap/clion/308/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/var/lib/snapd/snap/clion/296/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/var/lib/snapd/snap/clion/308/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/var/lib/snapd/snap/clion/296/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yashelter/Documents/CW_Numerical_Methods/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/yashelter/Documents/CW_chisl/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yashelter/Documents/CW_Numerical_Methods"
+			"value" : "/home/yashelter/Documents/CW_chisl"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -891,7 +891,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/var/lib/snapd/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30"
+			"value" : "/var/lib/snapd/snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yashelter/Documents/CW_Numerical_Methods/cmake-build-debug"
+			"value" : "/home/yashelter/Documents/CW_chisl/cmake-build-debug"
 		},
 		{
 			"name" : "CW_NM_IS_TOP_LEVEL",
@@ -1179,7 +1179,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yashelter/Documents/CW_Numerical_Methods"
+			"value" : "/home/yashelter/Documents/CW_chisl"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
